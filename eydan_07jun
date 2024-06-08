@@ -411,6 +411,8 @@ def partida_bots():
             break
 
 def partida_humana():
+    lista_de_fichasBotFT = []
+    
     print("Rummy")
     print()
     print()
@@ -767,8 +769,6 @@ def partida_humana():
         checkDeckLen=len(lista_de_fichasBot[turno_actual-1])
         #if (len(listas_de_tablero)==0):
         jugadasLegales=determinarJugadas(lista_de_fichasBot[turno_actual-1])
-
-
 
         listaPreferent=0
         # la lista preferente se planea que sea siempre la de mayor longitud
